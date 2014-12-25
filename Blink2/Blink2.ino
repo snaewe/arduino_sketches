@@ -8,22 +8,30 @@
 
  */
 
+int led[] = { 13, 12 , 11};
+int num_leds = sizeof(led) / sizeof(led[0]);
+int interLedDelay = 200;
+int toggleDelay = 500;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
-  // initialize digital pin 13 as an output.
-  pinMode(13, OUTPUT);
-  pinMode(12, OUTPUT);
+  // initialize digital pins as an output.
+  for(int i=0; i<num_leds; ++i)
+    pinMode(led[i], OUTPUT);
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(200);              // wait for a second
-  digitalWrite(12, HIGH);    // turn the LED off by making the voltage LOW
-  delay(1000);              // wait for a second
-  digitalWrite(13, LOW);   // turn the LED on (HIGH is the voltage level)
-  delay(200);              // wait for a second
-  digitalWrite(12, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);              // wait for a second
+  for(int i=0; i<num_leds; ++i)
+  {
+    digitalWrite(led[i], HIGH);
+    delay(interLedDelay);
+  }
+  delay(toggleDelay);
+  for(int i=0; i<num_leds; ++i)
+  {
+    digitalWrite(led[i], LOW);
+    delay(interLedDelay);
+  }
+  delay(toggleDelay);
 }
