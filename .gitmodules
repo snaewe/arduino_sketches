@@ -1,0 +1,6 @@
+[submodule "optiLoader"]
+	path = optiLoader
+	url = git://github.com/embecosm/optiLoader.git
+[submodule "hardware/arduino-extra-cores"]
+	path = hardware/arduino-extra-cores
+	url = git://github.com/sudar/arduino-extra-cores.git
