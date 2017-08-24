@@ -4,3 +4,12 @@
 [submodule "hardware/arduino-extra-cores"]
 	path = hardware/arduino-extra-cores
 	url = git://github.com/sudar/arduino-extra-cores.git
+[submodule "copter_light"]
+	path = copter_light
+	url = ../copter_light.git
+[submodule "hardware/ATTinyCore"]
+	path = hardware/ATTinyCore
+	url = ../../SpenceKonde/ATTinyCore.git
+[submodule "libraries/arduino-fsm"]
+	path = libraries/arduino-fsm
+	url = ../../jonblack/arduino-fsm.git
