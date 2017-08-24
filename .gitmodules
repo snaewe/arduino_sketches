@@ -6,10 +6,10 @@
 	url = git://github.com/sudar/arduino-extra-cores.git
 [submodule "copter_light"]
 	path = copter_light
-	url = ../copter_light.git
+	url = git://github.com/snaewe/copter_light.git
 [submodule "hardware/ATTinyCore"]
 	path = hardware/ATTinyCore
-	url = ../../SpenceKonde/ATTinyCore.git
+	url = git://github.com/SpenceKonde/ATTinyCore.git
 [submodule "libraries/arduino-fsm"]
 	path = libraries/arduino-fsm
-	url = ../../jonblack/arduino-fsm.git
+	url = git://github.com/jonblack/arduino-fsm.git
